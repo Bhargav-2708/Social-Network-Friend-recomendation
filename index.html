@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Network Friend Recommendation Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="brand">SocialLink</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#users">Users</a></li>
+          <li><a href="#recommendations">Recommendations</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content" id="home">
+        <div class="hero-text">
+          <p class="eyebrow">Graph-powered social discovery</p>
+          <h1>Social Network Friend Recommendation Engine</h1>
+          <p>
+            Explore a modern social network experience where recommendations are
+            generated using graph theory, adjacency lists, and BFS in C++.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#recommendations">Get Started</a>
+            <a class="btn btn-secondary" href="#about">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-icon">🤝</div>
+          <h3>People You May Know</h3>
+          <p>Find thoughtful connections through shared interests and friends.</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="users">
+        <div class="section-header">
+          <h2>Community Members</h2>
+          <p>Browse 10 sample users and discover how social circles grow.</p>
+        </div>
+        <div class="card-grid" id="userGrid"></div>
+      </section>
+
+      <section class="section" id="recommendations">
+        <div class="section-header">
+          <h2>Friend Recommendations</h2>
+          <p>Select a profile and generate relevant recommendations through BFS.</p>
+        </div>
+
+        <div class="recommendation-panel">
+          <div class="controls">
+            <label for="userSelect">Pick a user</label>
+            <select id="userSelect"></select>
+            <button class="btn btn-primary" id="recommendBtn">Generate Recommendations</button>
+          </div>
+          <div class="card-grid" id="recommendationResults"></div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-header">
+          <h2>About the Project</h2>
+          <p>A clean demonstration of DSA concepts in a friendly web layout.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="info-card">
+            <h3>Project Overview</h3>
+            <p>
+              This project combines a simple social network interface with C++ graph
+              logic to recommend people a user might know through mutual
+              connections.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Technologies Used</h3>
+            <p>HTML, CSS, JavaScript, and C++ with graph traversal and adjacency lists.</p>
+          </article>
+          <article class="info-card">
+            <h3>Core Concepts</h3>
+            <p>
+              The backend uses adjacency lists and breadth-first search to discover
+              relevant second-degree connections and count mutual friends.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Project Outcomes</h3>
+            <p>
+              The result is a polished demo that is easy to understand, visually
+              appealing, and suitable for a college internship presentation.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
